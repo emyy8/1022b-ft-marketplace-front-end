@@ -12,8 +12,8 @@
 }
 
 a {
-    font-weight: 500;
-    color: #ff6db6; /* Soft pink for links */
+    font-weight: 800;
+    color: #000000; /* Soft pink for links */
     text-decoration: inherit;
 }
 
@@ -34,7 +34,7 @@ body {
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
-    color: #ff6db6; /* Soft pink for headings */
+    color: #35232c; /* Soft pink for headings */
     margin-bottom: 20px; /* Added margin for spacing */
 }
 
@@ -45,14 +45,14 @@ button {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #ff6db6; /* Soft pink for buttons */
+    background-color: #f56bb0; /* Soft pink for buttons */
     cursor: pointer;
     transition: border-color 0.25s, transform 0.25s; /* Added transform transition */
     color: white;
 }
 
 button:hover {
-    border-color: #ff68b3; /* Lighter pink on hover */
+    border-color: #e637b1; /* Lighter pink on hover */
     transform: scale(1.05); /* Added scale effect on hover */
 }
 
@@ -64,10 +64,9 @@ button:focus-visible {
 form {
     display: flex;
     flex-direction: column;
-    border: 1px solid #f0f0f0;
     padding: 2em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    box-shadow: 0 0 10px rgba(6, 240, 26, 0.1);
+    background-color: #ffabd5;
     border-radius: 8px;
 }
 
@@ -80,6 +79,7 @@ form > div {
 
 form > div > input {
     width: 100%;
+    color: rgb(255, 255, 255); /* Change text color to white */
     padding: 0.5em;
     box-sizing: border-box;
     outline: none!important;
@@ -88,10 +88,24 @@ form > div > input {
 }
 
 form > div > input:focus {
-    border: 1px solid #ff6db6; /* Focus in soft pink */
+    border: 1px solid #fd77e0; /* Focus in soft pink */
 }
 
 main {
     width: 60vw;
     margin: 0 auto;
+}
+
+input[type="submit"] {
+    color: #ffffff; /* Change text color to white */
+    background-color: #ff6db6; /* Soft pink background for the button */
+    border: none; /* Remove border */
+    padding: 0.6em 1.2em; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.25s; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #f83697; /* Lighter pink on hover */
 }
