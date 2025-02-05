@@ -11,8 +11,37 @@ header {
     width: 100%; /* Ensure it spans the full width */
     top: 0; /* Position it at the top */
     z-index: 1000; /* Ensure it stays above other content */
+    box-sizing: border-box; /* Ensure no overflow */
 }
 
 header h1 {
     color: white; /* Change the color of the Marketplace text to white */
+}
+
+button {
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #f56bb0;
+    color: white;
+    cursor: pointer;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+button:hover {
+    background-color: #e637b1; /* Lighter pink on hover */
+    transform: scale(1.05);
+}
+
+/* Ajuste para o botão de cadastro, garantindo que não ultrapasse a tela */
+button.cadastrar-produto {
+    margin-top: 20px;
+    margin-right: 10px;
+    position: relative; /* Evitar sobreposição de outros elementos */
+    z-index: 10; /* Garante que o botão fique visível */
+}
+
+body {
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
 }
