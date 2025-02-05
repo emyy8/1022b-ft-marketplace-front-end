@@ -4,7 +4,7 @@
     font-weight: 400;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #f8d5e1; /* Rosa claro de fundo */
+    background-color: #f8d5e1; /* Soft pink background */
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -13,12 +13,12 @@
 
 a {
     font-weight: 500;
-    color: #ff6db6; /* Rosa suave para os links */
+    color: #ff6db6; /* Soft pink for links */
     text-decoration: inherit;
 }
 
 a:hover {
-    color: #ff68b3; /* Rosa mais claro no hover */
+    color: #ff68b3; /* Lighter pink on hover */
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     display: flex;
     min-width: 320px;
     min-height: 100vh;
-    background-color: #f8d5e1; /* Fundo rosa claro */
+    background-color: #f8d5e1; /* Soft pink background */
     justify-content: center;
     align-items: center;
 }
@@ -34,7 +34,7 @@ body {
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
-    color: #ff6db6; /* Título em rosa suave */
+    color: #ff6db6; /* Soft pink for headings */
     margin-bottom: 20px; /* Added margin for spacing */
 }
 
@@ -45,14 +45,14 @@ button {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #ff6db6; /* Rosa suave para os botões */
+    background-color: #ff6db6; /* Soft pink for buttons */
     cursor: pointer;
     transition: border-color 0.25s, transform 0.25s; /* Added transform transition */
     color: white;
 }
 
 button:hover {
-    border-color: #ff68b3; /* Hover em rosa mais suave */
+    border-color: #ff68b3; /* Lighter pink on hover */
     transform: scale(1.05); /* Added scale effect on hover */
 }
 
@@ -88,7 +88,7 @@ form > div > input {
 }
 
 form > div > input:focus {
-    border: 1px solid #ff6db6; /* Foco em rosa claro */
+    border: 1px solid #ff6db6; /* Focus in soft pink */
 }
 
 main {

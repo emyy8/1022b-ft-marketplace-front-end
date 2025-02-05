@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(168, 213, 255);
+    background-color: #ff6db6; /* Deeper pink for the header */
     color: white;
     padding: 10px;
     text-align: center;
@@ -27,5 +27,5 @@ header ul li a, header a {
 
 header ul li a:hover, header a:hover {
     color: rgb(237, 232, 232);
-    background-color: rgba(255, 255, 255, 0.2); /* Added background color on hover */
+    background-color: rgba(255, 255, 255, 0.3); /* Lighter pink background on hover */
 }

@@ -3,7 +3,7 @@
     margin: 0 auto;
     text-align: center;
     width: 100vw;
-    background-color: #f8d5e1; /* Rosa claro de fundo */
+    background-color: #f8d5e1; /* Soft pink background */
 }
 
 .logo {
@@ -14,7 +14,7 @@
 }
 
 .logo:hover {
-    filter: drop-shadow(0 0 2em #ff6db6); /* Rosa suave no hover */
+    filter: drop-shadow(0 0 2em #ff6db6); /* Soft pink on hover */
     transform: scale(1.1); /* Added scale effect on hover */
 }
 
@@ -43,7 +43,7 @@
 }
 
 .read-the-docs {
-    color: #ff6db6; /* Rosa suave */
+    color: #ff6db6; /* Soft pink */
 }
 
 /* Estilos para os produtos */
@@ -70,13 +70,13 @@
 
 .container-produtos h1 {
     font-size: 2em;
-    color: #ff68b3; /* Rosa suave */
+    color: #ff68b3; /* Soft pink */
 }
 
 .imagem-previa-upload {
     width: 300px;
     height: auto;
-    border: 2px dashed #ff6db6; /* Borda rosa para upload */
+    border: 2px dashed #ff6db6; /* Pink border for upload */
     border-radius: 8px;
     padding: 10px;
     background-color: #fff;
