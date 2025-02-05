@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+# Projeto de Livraria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação de **livraria online**, onde é possível cadastrar, alterar e excluir produtos (livros) no catálogo. A aplicação está estruturada com **React** e utiliza **Rotas** para navegação entre diferentes páginas, como a página de cadastro e a de alteração de produtos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Funcionalidades Implementadas
 
-## Expanding the ESLint configuration
+- **Cadastro de Produtos**: Permite adicionar novos livros ao catálogo com informações como nome, descrição, preço e imagem.
+- **Alteração de Produtos**: Permite editar os detalhes de um produto existente, incluindo nome, descrição, preço e imagem.
+- **Exclusão de Produtos**: Permite excluir um livro do catálogo.
+- **Exibição de Produtos**: A página principal exibe todos os produtos cadastrados em um layout responsivo.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instruções para Rodar o Projeto Localmente
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone o repositório**:
+   ```
+   git clone https://github.com/seu-usuario/livraria.git
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Navegue até o diretório do projeto**:
+   ```
+   cd livraria
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. **Instale as dependências**:
+   Se você ainda não tem o **Node.js** instalado, faça isso primeiro. Depois, instale as dependências do projeto com:
+   ```
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. **Rodando a aplicação**:
+   Após a instalação das dependências, você pode rodar o projeto com o comando:
+   ```
+   npm start
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+## Link do Projeto na Vercel
+
+Você pode acessar o projeto online na Vercel através do seguinte link:  
+[https://1022b-ft-marketplace-front-end.vercel.app]
+
+---
+
+## Estrutura do Projeto
+
+- **App.tsx**: Componente principal que exibe os produtos e permite excluir e alterar produtos.
+- **CadastroProduto.tsx**: Formulário para cadastrar novos produtos.
+- **AlterarProduto.tsx**: Formulário para editar um produto existente.
+- **main.tsx**: Configuração das rotas da aplicação.
+- **index.css**: Arquivo de estilos principais, incluindo o estilo de fundo rosa e os estilos dos botões e formulários.
+
+---
+
+## Como Funciona o Código
+
+- **Rotas**: A navegação entre as páginas é feita utilizando **React Router**. O arquivo `main.tsx` contém as rotas para a página principal, cadastro de produto e alteração de produto.
+  
+- **Cadastro de Produto**: A página de cadastro (`CadastroProduto.tsx`) possui um formulário que envia os dados para a API, criando um novo produto.
+  
+- **Alteração de Produto**: A página de alteração (`AlterarProduto.tsx`) permite editar os dados de um produto existente, utilizando o ID para buscar o produto e atualizá-lo.
+
+- **Exclusão de Produto**: Na página principal (`App.tsx`), cada produto possui um botão para exclusão, que interage com a API para remover o item do catálogo.
+
