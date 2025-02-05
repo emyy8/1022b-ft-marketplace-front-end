@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto é uma aplicação de **livraria online**, onde é possível cadastrar, alterar e excluir produtos (livros) no catálogo. A aplicação está estruturada com **React** e utiliza **Rotas** para navegação entre diferentes páginas, como a página de cadastro e a de alteração de produtos.
+Este projeto é uma aplicação de **livraria online**, onde é possível cadastrar, alterar, listar e excluir produtos (livros) no catálogo. A aplicação está estruturada com **React** e utiliza **Rotas** para navegação entre diferentes páginas, como a página de cadastro e a de alteração de produtos.
 
 ### Funcionalidades Implementadas
 
