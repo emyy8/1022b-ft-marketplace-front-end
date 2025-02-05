@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function AlterarProduto() {
     const { id } = useParams()
     useEffect(() => {
-        fetch(`https://one022b-marketplace-d6hb.onrender.com/produtos/${id}`)
+        fetch(`https://one022b-ft-marketplace.onrender.com/produtos/${id}`)
             .then(resposta => resposta.json())
             .then(dados => {
                 setDescricao(dados.descricao)
@@ -28,7 +28,7 @@ function AlterarProduto() {
             preco: preco,
             imagem: imagem
         }
-        fetch(`https://one022b-marketplace-d6hb.onrender.com/produtos/${id}`, {
+        fetch(`https://one022b-ft-marketplace.onrender.com/produtos/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

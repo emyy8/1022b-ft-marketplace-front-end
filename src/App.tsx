@@ -14,12 +14,12 @@ function App() {
   const [produtos, setProdutos] = useState<ProdutoType[]>([])
   //useEffect(O QUe fazer, Quando Fazer)
   useEffect(()=>{
-    fetch("https://one022b-marketplace-d6hb.onrender.com/produtos")
+    fetch("https://one022b-ft-marketplace.onrender.com/produtos")
     .then(resposta=>resposta.json())
     .then(dados=>setProdutos(dados))
   },[])
   function handleExcluir(id:number){
-    fetch(`https://one022b-marketplace-d6hb.onrender.com/produtos/${id}`,{
+    fetch(`https://one022b-ft-marketplace.onrender.com/produtos/${id}`,{
       method:"DELETE"
     })
     .then(resposta=>{
