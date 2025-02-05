@@ -3,7 +3,7 @@ import './Header.css'
 function Header(){
     return(
         <header>
-            <Link to="/"><h1>MarketPlace</h1></Link>
+            <Link to="/"><h1>Livraria Kitty</h1></Link>
             <nav>
                 <ul>
                     <li>
